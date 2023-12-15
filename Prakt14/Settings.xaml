@@ -1,0 +1,16 @@
+﻿<Window x:Class="Prakt14.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakt14"
+        mc:Ignorable="d"
+        Title="Настройки" Height="200" Width="220" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" FontSize="16" Activated="Window_Activated">
+    <StackPanel VerticalAlignment="Center">
+        <Label Content="Количество строк" Margin="5,0"/>
+        <TextBox x:Name="tbRowCount" Margin="5"/>
+        <Label Content="Количество столбцов" Margin="5,0"/>
+        <TextBox x:Name="tbColumnCount" Margin="5"/>
+        <Button Content="Задать" Margin="5" Click="btnSet_Click"/>
+    </StackPanel>
+</Window>
